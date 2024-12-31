@@ -41,6 +41,8 @@ pub fn build(b: *std.Build) !void {
             .PCRE2_MAX_VARLOOKBEHIND = 255,
             .NEWLINE_DEFAULT = 2,
             .PCRE2_PARENS_NEST_LIMIT = 250,
+            .PCRE2GREP_BUFSIZE = 20480,
+            .PCRE2GREP_MAX_BUFSIZE = 1048576,
         },
     );
 
